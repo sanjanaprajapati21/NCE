@@ -22,7 +22,7 @@ class Experience(models.Model):
     years=models.IntegerField()
     s=models.ForeignKey(Skills,on_delete=models.CASCADE)
 
-
+#this is company model
 class Company(models.Model):
     name=models.CharField(max_length=100)
     email=models.EmailField()
