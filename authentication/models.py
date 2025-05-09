@@ -20,7 +20,7 @@ class  Freelancer(models.Model):
 
 class Experience(models.Model):
     years=models.IntegerField()
-    s_id=models.ForeignKey(Skills,on_delete=models.CASCADE)
+    s=models.ForeignKey(Skills,on_delete=models.CASCADE)
 
 
 class Company(models.Model):
